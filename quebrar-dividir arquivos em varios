@@ -1,0 +1,5 @@
+
+$i=0; Get-Content d:\teste\teste.txt -ReadCount 1000 | %{$i++; $_ | Out-File d:\test\out_$i.txt}
+
+## -ReadCount 1000 :: quantas linhas serão lidas de uma vez - qtd de linhas que o arquivo será dividido.
+## Out-File d:\test\out_$i.txt :: local e nome dos arquivos gerados.
